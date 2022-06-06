@@ -10,6 +10,6 @@ $$
 
 Let $\phi = \frac{1+\sqrt{5}}{2}$ and $\hat{\phi} = \frac{1-\sqrt{5}}{2}$ its real conjugate. Here are some basic notions, in no particular order:
 
-1. By direct computation, $\phi \hat{phi} = -1$ and therefore $-\phi = \tfrac{1}{\phi}$. A similar relation can be obtained for $-\hat{\phi}$.
-2. Via the quadratic equation, $phi$ and $\hat{\phi}$ are the two distinct real roots of the polynomial $z^2 - z -1$.
+1. By direct computation, $\phi \hat{\phi} = -1$ and therefore $-\phi = \tfrac{1}{\phi}$. A similar relation can be obtained for $-\hat{\phi}$.
+2. Via the quadratic equation, $\phi$ and $\hat{\phi}$ are the two distinct real roots of the polynomial $z^2 - z -1$.
 3. The above implies that $\phi^2 = \phi+1$.
