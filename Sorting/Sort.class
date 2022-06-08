@@ -11,8 +11,9 @@ public class Sort{
     public int[] merge_sort_mod(int[] seq){
 
     }
-    private void exchange(int a, int b){
 
+    public int[] bubble_sort(int[] seq){
+        
     }
 
 

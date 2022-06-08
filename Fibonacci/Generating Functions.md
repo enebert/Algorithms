@@ -2,8 +2,8 @@
 
 $$
 \begin{align*}
-\matscr{F}(z):=& \sum_{i=0}^{\infty} F_i z^i \\
-              =& 0 + z + z^2 + 2z^3 + 3z^4 + 5z^5 + 8z^6 + \cdots\\
+\mathscr{F}(z):=& \sum_{i=0}^{\infty} F_i z^i \\
+               =& 0 + z + z^2 + 2z^3 + 3z^4 + 5z^5 + 8z^6 + \cdots\\
 \end{align*}
 $$
 where the coefficient $F_i$ is the $i^{\text{th}}$ Fibonacci number.
@@ -41,7 +41,7 @@ The first equality is obtained by rearranging the relation we obtained for the g
 
 $$
 \begin{align*}
-\mathscr{F}(z) &= z+z\mathsccr{F}(z) + z^2\mathscr{F}(z) \\
+\mathscr{F}(z) &= z+z\mathscr{F}(z) + z^2\mathscr{F}(z) \\
 \mathscr{F}(z) -z \mathscr{F}(z) - z^2 \mathscr{F}(z) &= z \\
 \mathscr{F}(z)(1-z-z^2) &= z \\
 \mathscr{F}(z) = \frac{z}{1-z-z^2} \\
