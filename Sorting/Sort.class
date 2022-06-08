@@ -1,0 +1,19 @@
+public class Sort{
+
+    public int[] insertion_sort(int[] seq){
+
+    }
+
+    public int[] merge_sort(int[] seq){
+
+    }
+
+    public int[] merge_sort_mod(int[] seq){
+
+    }
+    private void exchange(int a, int b){
+
+    }
+
+
+}
