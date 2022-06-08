@@ -6,6 +6,7 @@ $$
                =& 0 + z + z^2 + 2z^3 + 3z^4 + 5z^5 + 8z^6 + \cdots\\
 \end{align*}
 $$
+
 where the coefficient $F_i$ is the $i^{\text{th}}$ Fibonacci number.
 
 **Claim:** $\mathscr{F}(z) = z+z\mathscr{F}(z) + z^2\mathscr{F}(z)$
@@ -16,7 +17,7 @@ We use the definition of the Fibonacci sequence and our ability to reindex sums:
 
 $$
 \begin{align*}
-    \mathscr{F}(z) &= \sum_{i=0}^{infty} F_iz^i \\
+    \mathscr{F}(z) &= \sum_{i=0}^{\infty} F_iz^i \\
                    &= 0 + z + \sum_{i=2}^{\infty} (F_{i-1} + F_{i-2})z^i \\
                    &= z + \sum_{i=2}^{\infty} F_{i-1} z^i + \sum_{i=2}^{\infty} F_{i-2}z^i \\
                    &= z + \sum_{i=0}F_iz^{i+1} + \sum_{i=0}^{\infty} F_i z^{i+2} \\
@@ -73,7 +74,7 @@ $$
 \begin{align*}
     \mathscr{F}(z) &= \frac{1}{\sqrt{5}} \left( \frac{1}{1-\phi z} - \frac{1}{1-\hat{\phi}} z \right) \\
                    &= \frac{1}{\sqrt{5}} \left( \sum_{i=0}^{\infty} (\phi z)^i - \sum_{i=0}^{\infty} (\hat{\phi}z)^i \right) \\
-                   &= \frac{1}{\sqrt{5}} \sum_{i=0}{\infty} (\phi^i - \hat{\phi}^i)z^i \\
+                   &= \frac{1}{\sqrt{5}} \sum_{i=0}^{\infty} (\phi^i - \hat{\phi}^i)z^i \\
 \end{align*}
 $$
 
@@ -97,7 +98,7 @@ $$
 F_i = \frac{\phi^i - \hat{\phi}^i}{\sqrt{5}} \leq \frac{\phi^i}{\sqrt{5}} + \frac{1}{2}
 $$
 
-One now has the desired result  because $F_i = \lfloor \frac{\phi^i}{\sqrt{5}} + \frac{1}{2} \rfloor$ is equivalent to rounding $\frac{\phi^i}{\sqrt{5}}$ to the nearest integer.
+One now has the desired result  because $F_i = \left\lfloor \frac{\phi^i}{\sqrt{5}} + \frac{1}{2} \right\rfloor$ is equivalent to rounding $\frac{\phi^i}{\sqrt{5}}$ to the nearest integer.
 
 5. We finish by proving a well-known result: that the Fibonacci sequence grows exponetially in $phi$:
 
