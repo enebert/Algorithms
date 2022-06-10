@@ -1,0 +1,17 @@
+#Complied Class File
+*.class
+
+#Log File
+*.log
+
+#Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.rar
+*.tar.gz
+
+#Test Files
+*Test.*
