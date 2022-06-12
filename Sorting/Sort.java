@@ -36,10 +36,6 @@ public class Sort{
         merge_sort_rec(seq, 0, seq.length-1);
     }
 
-    public static void merge_sort_mod(int[] seq){
-
-    }
-
     private static void merge_sort_rec(int[] seq, int start, int last){
         if(last - start <= 0){
             return;
