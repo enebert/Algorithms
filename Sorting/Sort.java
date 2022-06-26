@@ -85,4 +85,39 @@ public class Sort{
             index++;
         }
     }
+
+    public static void quicksort(int[] array){
+        quicksort(array, 0, array.length-1);
+    }
+
+    private static void quicksort(int[] array, int start, int last){
+        if (start >= last) return;
+
+        int index = partition(array, start, last);
+
+        quicksort(array, start, index-1);
+        quicksort(array, index+1, last);
+
+    }
+
+    private static int partition(int[] array, int start, int last){
+        int pivot = array[last];
+        int index = start-1;
+
+        for (int j = start; j < last; j++){
+            if( array[j] <= pivot){
+                index++;
+
+                int temp = array[index];
+                array[index] = array[j];
+                array[j] = temp;
+            }
+        }
+
+        int temp = array[last];
+        array[last] = array[index+1];
+        array[index+1] = temp;
+
+        return ++index;
+    }
 }
